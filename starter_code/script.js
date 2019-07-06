@@ -1,6 +1,5 @@
 window.onload = function() {
   document.getElementById("start-button").onclick = function() {
-    console.log("I was clicked")
     startGame();
   };
 
@@ -33,6 +32,18 @@ window.onload = function() {
       ctx.fillRect(200, i, 5, 25);
 
     }
+
+    //creates an image using the image constructor
+    let carImg = new Image();
+    carImg.src = './images/car.png';
+    
+    carImg.addEventListener("load", function() {
+      ctx.drawImage(carImg, 190, 620, 30, 50);
+       }, false);
+
+    
+   
+    
 
 
 
