@@ -58,7 +58,7 @@ window.onload = function() {
     canvas.addEventListener("keydown", keyDownEvent, false);
 
     function keyDownEvent(e){
-  
+      //determines if a player clicked right or left
      
       if(e.keyCode === 37){
          //player presses the left key
